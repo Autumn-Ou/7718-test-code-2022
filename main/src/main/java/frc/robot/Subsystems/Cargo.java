@@ -29,17 +29,17 @@ public class Cargo extends RobotSubsystems {
     }
 
     public void teleopPeriodic()    {
-        if(frc.robot.Robot.driverOne.getAButton())  {
+        if(frc.robot.Robot.driverTwo.getAButton())  {
             cargoArm.set(VictorSPXControlMode.PercentOutput, 0.3);
-        }   else if(frc.robot.Robot.driverOne.getBButton())   {
+        }   else if(frc.robot.Robot.driverTwo.getBButton())   {
             cargoArm.set(VictorSPXControlMode.PercentOutput, -0.3);
         }   else  {
             cargoArm.set(VictorSPXControlMode.PercentOutput, 0);
         }
 
-        if(frc.robot.Robot.driverOne.getLeftBumper())  {
+        if(frc.robot.Robot.driverTwo.getLeftBumper())  {
             cargoIntake.set(VictorSPXControlMode.PercentOutput, 0.75);
-        }   else if(frc.robot.Robot.driverOne.getRightBumper()) {
+        }   else if(frc.robot.Robot.driverTwo.getRightBumper()) {
             cargoIntake.set(VictorSPXControlMode.PercentOutput, -0.75);
         }   else    {
             cargoIntake.set(VictorSPXControlMode.PercentOutput, 0);
