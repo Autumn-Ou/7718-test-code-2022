@@ -5,6 +5,11 @@ import frc.robot.RobotSubsystems;
 import edu.wpi.first.cameraserver.CameraServer;
 
 public class Display extends RobotSubsystems {
+    
+    // Constructors
+    public Display() {
+        robotInit();
+    }
     int loopCount = 0;
 
     public void robotInit() {CameraServer.startAutomaticCapture();}
