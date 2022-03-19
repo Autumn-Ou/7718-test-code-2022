@@ -5,6 +5,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
+import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import java.io.FileInputStream;
@@ -33,6 +34,9 @@ public class Robot extends TimedRobot {
   public static frc.robot.Subsystems.Drive Drive;
   public static frc.robot.Subsystems.Cargo Cargo;
   public static frc.robot.Subsystems.Lift Lift;
+
+  public static XboxController driverOne = new XboxController(0);
+  public static XboxController driverTwo = new XboxController(1);
 
   private static final String kDefaultAuto = "Default";
   private static final String kCustomAuto = "My Auto";
